@@ -6,7 +6,7 @@ import ClientProductPage from "./ClientProductPage";
 
 export async function generateMetadata({ params }) {
   const res = await fetch(
-    `http://localhost:3000/api/products/${params.id}`
+    `/api/products/${params.id}`
   ).then((res) => res.json());
 
   return {
@@ -16,12 +16,12 @@ export async function generateMetadata({ params }) {
 }
 
 const ProductPage = async ({ params }) => {
-  const res = await fetch(`http://localhost:3000/api/products/${params.id}`);
+  const res = await fetch(`/api/products/${params.id}`);
   if (res.status === 404) {
     return notFound()
   }
   const product = await res.json();
-  const response = await fetch("http://localhost:3000/api/products");
+  const response = await fetch("/api/products");
   if (response.status === 404) {
     return notFound()
   }
