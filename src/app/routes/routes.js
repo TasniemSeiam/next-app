@@ -6,5 +6,5 @@ export const routes = [
     { title: "Login", href: "/login" },
     { title: "Blog", href: "/blog" },
     { title: "Add Product", href: "/add-products" },
-    { title: "Products from local api", href: "/products-local-api" },
+    // { title: "Products from local api", href: "/products-local-api" },
   ];
