@@ -1,0 +1,24 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  .goToTopButton {
+    background-color: #4CAF50;
+    color: white; 
+    padding: 5px 13px; 
+    font-size: 18px;
+    border: none; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    transition: opacity 0.4s ease; 
+    opacity: 0.8;
+  }
+  
+  .goToTopButton:hover {
+    background-color: #05740a; 
+    opacity: 1;  
+  }
+  
