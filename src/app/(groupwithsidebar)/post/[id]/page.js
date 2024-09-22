@@ -27,7 +27,7 @@ const PostById = async ({ params }) => {
     return notFound()
   }
   const post = await response.json();
-  console.log(post);
+  // console.log(post);
   return <CardPost title={post.title} body={post.body} />;
 };
 

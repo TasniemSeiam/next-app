@@ -36,9 +36,9 @@ export async function create(formData) {
   const thumbnail = result.secure_url;
   const id = productsLength + 1;
 
-  if (!title || !price || !description || !thumbnail) {
-    throw new Error("All fields are required");
-  }
+  // if (!title || !price || !description || !thumbnail) {
+  //   throw new Error("All fields are required");
+  // }
 
   addProduct({ title, price, description, thumbnail, id });
   revalidatePath("/home-mongoose");
